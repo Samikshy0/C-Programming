@@ -5,6 +5,7 @@ void main() {
     // printf("Enter a num: ");
     // scanf("%d", &input);
     //ex: 123
+    
     while(input!=0) {
         rem = input % 10; // 1st: 3 , 2, 1
         sum = sum + rem;  // sum = 3, 5, 6
