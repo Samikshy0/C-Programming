@@ -16,5 +16,7 @@ int main() {
         }
         
     }
-     printf("C");
+        printf("C");
+
+    
 }
