@@ -13,8 +13,7 @@ int main() {
         if(var == v[i]) {
             printf("v\n");
             return 0;
-        }
-        
+        }  
     }
         printf("C");
 
