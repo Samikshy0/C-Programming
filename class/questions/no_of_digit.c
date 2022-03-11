@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    int a=235;
-    int res = 0;
-    
+    int a = 3456;
+    int g = 0;
+
     while(a!=0) {
         a = a/10;
-        res = res + 1;
+        g++;
     }
-    printf("Total no of digits = %d", res);
+    printf("NO of digits %d", g);
 }
