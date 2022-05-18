@@ -1,19 +1,23 @@
 #include <stdio.h>
-
-
 int main() {
-    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-
-    printf("Array before update: ");
-    for(int i = 0; i < 10; i++) {
+    int arr[] = {1,3,5,6,7,9};
+    // print the array
+    for (int i = 0; i < 6; i++)
+    {
         printf("%d ", arr[i]);
     }
-
-    int update_num = 59, index=3;
-    arr[index] = update_num;
+    printf("Enter the index you want to update: \n");
+    int index;
+    scanf("%d", &index);
+    printf("Enter the number you want to update: \n");
+    int num;
+    scanf("%d", &num);
+    arr[index] = num;
+    printf("The array after update is: \n");
+    for (int i = 0; i < 6; i++)
+    {
+        printf("%d ", arr[i]);
+    }
     
-    printf("\nArray after update: ");
-    for(int i = 0; i < 10; i++) {
-        printf("%d ", arr[i]);
-    }
+    return 0;
 }
