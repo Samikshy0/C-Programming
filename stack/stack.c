@@ -3,11 +3,12 @@
 
 int TOP = -1;
 int stack[MAX];
-int isfull(int b);
-int printstack();
-void menu();
+int isfull(int b);  // TO check if stack is full
+int printstack(); // TO print the stack
+void menu();   
 
-int push(int a);
+int push(int a); // TO push or insert an element into the stack
+int pop(); // TO pop or delete an element from the stack
 
 int main()
 {
@@ -53,6 +54,18 @@ int printstack()
     }
     return 1;
 }
+
+int pop()
+{
+    if (TOP == -1)
+    {
+        printf("Stack is empty\n");
+        return 0;
+    }
+    TOP--;
+    return 1;
+}
+
 
 // menu print function
 void menu() {
