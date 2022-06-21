@@ -21,9 +21,21 @@ void print_ll(struct node *ptr)
         printf("%d\n", ptr->data);
         ptr = ptr->next;
     }
+    printf("Success\n");
+    
 }
+
+struct node * i_head(struct node *head,int a) {
+    struct node *element = (struct node*)malloc(sizeof(struct node));
+    element -> data = a;
+    element -> next = head;
+
+    return element;
+}
+
 int main()
 {
+
     struct node *head, *second, *third, *fourth;
 
     // allocate the memory
@@ -45,10 +57,16 @@ int main()
     third->next = fourth;
 
     // data for 4th node
-    fourth->data=3;
-    fourth->next=NULL;
+    fourth->data = 3;
+    fourth->next = NULL;
 
+    print_ll(head);
 
+    head = i_head(head, 71);
+
+    print_ll(head);
+
+    head = i_head(head, 89);
     print_ll(head);
     return 0;
 }
