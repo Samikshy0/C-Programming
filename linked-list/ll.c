@@ -28,5 +28,22 @@ int main() {
     third->data=5;
     third->next=NULL;
 
+    // print node 1
+    printf("%d\n",head->data);
+
+    // updating the data of node 1
+    printf("Updating the data of node 1\n");
+    head->data=1;
+
+    // print node 1
+    printf("%d\n",head->data);
+
+    // Taking user input for node 1
+    printf("Enter the data for node 1: ");
+    scanf("%d",&head->data);
+
+    // print node 1
+    printf("%d\n",head->data);
+
     return 0;
 }
